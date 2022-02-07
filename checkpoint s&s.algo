@@ -3,13 +3,13 @@ VAR
     test,i,j:intger
      a:array of intger[]
 BEGIN
-FOR j FROM 2 TO  a.length  DO
+FOR j FROM 1 TO  a.length  DO
  test=a[j];
 i=j-1;
  WHILE ((i>0) and (a[i]>test)) DO
   a[i+1]=a[i]
   i=i-1;
-  a[i+1]=test
   END_WHILE
+  a[i+1]=test
   END_FOR
 END
